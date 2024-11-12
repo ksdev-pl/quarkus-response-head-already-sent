@@ -1,0 +1,29 @@
+$sidebar-top: 48px;
+
+.sidebar {
+  @media (min-width: map-get($grid-breakpoints, md)) {
+    .offcanvas-lg {
+      position: -webkit-sticky;
+      position: sticky;
+      top: $sidebar-top;
+    }
+
+    position: fixed;
+    top: $sidebar-top;
+    bottom: 0;
+    overflow-y: auto;
+  }
+
+  .nav-link {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .sidebar-heading {
+    font-size: 0.75rem;
+  }
+
+  i {
+    font-size: 16px;
+  }
+}
